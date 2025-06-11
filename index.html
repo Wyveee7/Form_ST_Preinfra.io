@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Segurança no Trabalho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo-azulelaranja.png" alt="Pré Infra" class="logo">
+    </header>
+
+    <h1>Formulário Segurança no Trabalho</h1>
+
+    <form action="db.php" method="post">
+        <!-- Campo de E-mail -->
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required><br><br>
+
+        <!-- Campo Observador -->
+        <label for="observador">Observador *</label>
+        <select id="observador" name="observador" required>
+            <option value="" disabled selected>Favor selecionar</option>
+            <option value="Bruno">Bruno</option>
+            <option value="Jonan">Jonan</option>
+            <option value="Fabiane">Fabiane</option>
+        </select><br><br>
+
+        <!-- Campo Avaliação -->
+        <label for="avaliacao">Avaliação *</label>
+        <select id="avaliacao" name="avaliacao" required>
+            <option value="" disabled selected>Favor selecionar</option>
+            <option value="Avaliação 1">Avaliação 1</option>
+            <option value="Avaliação 2">Avaliação 2</option>
+            <option value="Avaliação 3">Avaliação 3</option>
+            <option value="Avaliação 4">Avaliação 4</option>
+        </select><br><br>
+
+        <!-- Setor -->
+        <label for="setor">Setor *</label>
+        <select id="setor" name="setor" required>
+            <option value="" disabled selected>Favor selecionar</option>
+            <option value="setor 1">Acabamento </option>
+            <option value="setor 2">Carpintaria</option>
+            <option value="setor 3">Concreto</option>
+            <option value="setor 4">Ferragem</option>
+            <option value="setor 5">Gravataí</option>
+            <option value="setor 6">Logística</option>
+            <option value="setor 7">Manutenção</option>
+            <option value="setor 8">Obra</option>
+            <option value="setor 9">Painéis</option>
+            <option value="setor 10">Protensão</option>
+        </select><br><br>
+
+        <!-- Bloco A: Posição das Pessoas -->
+        <fieldset>
+            <legend>A. Posição das Pessoas *</legend>
+            <label for="A1">A1. Risco de Acidente (queda e objetos, madeiras com prego, etc...):</label>
+            <select id="A1" name="A1" required>
+                <option value="0">0</option>
+                <option value="0.10">0.10</option>
+                <option value="0.20">0.20</option>
+                <option value="0.30">0.30</option>
+            </select><br><br>
+
+            <label for="A2">A2. Risco de Queda (quedas de diferente nível):</label>
+            <select id="A2" name="A2" required>
+                <option value="0">0</option>
+                <option value="0.10">0.10</option>
+                <option value="0.20">0.20</option>
+                <option value="0.30">0.30</option>
+            </select><br><br>
+
+            <label for="A3">A3. Risco de Queimadura (risco de incêndio ou trabalho a quente):</label>
+            <select id="A3" name="A3" required>
+                <option value="0">0</option>
+                <option value="0.10">0.10</option>
+                <option value="0.20">0.20</option>
+                <option value="0.30">0.30</option>
+            </select><br><br>
+
+            <label for="A4">A4. Risco de Choque Elétrico (elétrica defeituosa):</label>
+            <select id="A4" name="A4" required>
+                <option value="0">0</option>
+                <option value="0.10">0.10</option>
+                <option value="0.20">0.20</option>
+                <option value="0.30">0.30</option>
+            </select><br><br>
+
+            <label for="A5">A5. Risco Químico (fora do local apropriado ou com uso incorreto):</label>
+            <select id="A5" name="A5" required>
+                <option value="0">0</option>
+                <option value="0.10">0.10</option>
+                <option value="0.20">0.20</option>
+                <option value="0.30">0.30</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Bloco B: EPIs (Sem o uso ou incorreto) -->
+        <fieldset>
+            <legend>B. EPIs (Sem o uso ou incorreto) *</legend>
+            <label for="B1">B1. Cabeça (capacete):</label>
+            <select id="B1" name="B1" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+
+            <label for="B2">B2. Sistema Respiratório (máscara PFF2 ou respirador com filtro):</label>
+            <select id="B2" name="B2" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+
+            <label for="B3">B3. Olhos e Rosto (óculos ou protetor facial):</label>
+            <select id="B3" name="B3" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+
+            <label for="B4">B4. Ouvidos (protetor auricular ou abafador):</label>
+            <select id="B4" name="B4" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+
+            <label for="B5">B5. Mãos e Braços (luvas ou mangas):</label>
+            <select id="B5" name="B5" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+
+            <label for="B6">B6. Pés e Pernas (botina, bota e perneira):</label>
+            <select id="B6" name="B6" required>
+                <option value="0">0</option>
+                <option value="0.75">0.75</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Bloco C: Arrumação e Limpeza -->
+        <fieldset>
+            <legend>C. Arrumação e Limpeza *</legend>
+            <label for="C1">C1. Ambiente Sujo:</label>
+            <select id="C1" name="C1" required>
+                <option value="0">0</option>
+                <option value="0.2">0.2</option>
+                <option value="0.4">0.4</option>
+                <option value="0.6">0.6</option>
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+            </select><br><br>
+
+            <label for="C2">C2. Local Desorganizado:</label>
+            <select id="C2" name="C2" required>
+                <option value="0">0</option>
+                <option value="0.2">0.2</option>
+                <option value="0.4">0.4</option>
+                <option value="0.6">0.6</option>
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+            </select><br><br>
+
+            <label for="C3">C3. Área de Circulação Obstruída:</label>
+            <select id="C3" name="C3" required>
+                <option value="0">0</option>
+                <option value="0.2">0.2</option>
+                <option value="0.4">0.4</option>
+                <option value="0.6">0.6</option>
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+            </select><br><br>
+
+            <label for="C4">C4. Material Não Conforme na Área (ferramentas ou insumos):</label>
+            <select id="C4" name="C4" required>
+                <option value="0">0</option>
+                <option value="0.2">0.2</option>
+                <option value="0.4">0.4</option>
+                <option value="0.6">0.6</option>
+                <option value="0.8">0.8</option>
+                <option value="1">1</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Campo para anexar imagens -->
+        <label for="imagem">Anexar Imagem</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

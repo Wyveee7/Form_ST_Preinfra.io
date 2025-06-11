@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;  /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;  /* Organiza os itens na coluna */
+    height: 100vh;  /* Garante que a altura da página ocupe toda a tela */
+    overflow-x: hidden;  /* Impede que o conteúdo transborde horizontalmente */
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 10px 10px;  /* Espaço superior e inferior no cabeçalho */
+    position: fixed;  /* Cabeçalho fixo no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* Garante que o cabeçalho fique sobre o restante do conteúdo */
+}
+
+header .logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 155px;  /* Espaço para garantir que o título não fique escondido pelo cabeçalho */
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;  /* Garantir que o formulário não ultrapasse 800px de largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;  /* Espaço suficiente para o cabeçalho */
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    max-height: calc(100vh - 180px);  /* Garante que o formulário não ultrapasse a altura da tela, considerando o cabeçalho */
+    overflow-y: auto;  /* Se o conteúdo for maior que a tela, ele vai rolar */
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"], input[type="text"], select, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+select {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+input[readonly] {
+    background-color: #f4f4f4;
+}
+
+input[type="file"] {
+    background-color: #f9f9f9;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        width: 100%;
+    }
+    header .logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    form {
+        padding: 10px;
+        width: 90%;
+    }
+}
